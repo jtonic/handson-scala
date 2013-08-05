@@ -16,7 +16,7 @@ object PriceCalculatorWithMonads {
     def init[S]: State[S, S] = state[S, S] (s => (s, s))
 
     def modify[S] (f: S => S) = {
-      init[S].flatMap(s => state(_ => (f(s), ())))
+//      init[S].flatMap(s => state(_ => (f(s), ())))
     }
   }
 
