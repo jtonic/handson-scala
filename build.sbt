@@ -4,17 +4,18 @@ organization := "jtonic"
 
 version := "1.0"
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.12.2"
 
 scalacOptions ++= Seq("-unchecked", "-deprecation")
 
 libraryDependencies ++= Seq(
-    "junit" % "junit" % "4.11" % "test",
-    "org.specs2" %% "specs2-core" % "3.8.4" % "test",
-    "com.typesafe.akka" %% "akka-actor" % "2.4.8"
+    "junit" % "junit" % "4.12" % "test",
+    "org.scalatest" %% "scalatest" % "3.0.3",
+//    "org.specs2" %% "specs2-core" % "3.8.4" % "test",
+    "com.typesafe.akka" %% "akka-http" % "10.0.6",
     // "org.scalaz" %% "scalaz-core" % scalazVersion,
     // "org.scalaz" %% "scalaz-http" % scalazVersion,
     // "com.h2database" % "h2" % "1.3.173",
-    // "org.squeryl" % "squeryl_2.10" % "0.9.5-6"
+     "org.squeryl" %% "squeryl" % "0.9.8"
 )
 

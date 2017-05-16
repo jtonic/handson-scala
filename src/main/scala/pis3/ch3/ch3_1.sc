@@ -1,0 +1,1 @@
+Console println Array("Antonel", "is", "the", "best").toList.mkString(" ")
