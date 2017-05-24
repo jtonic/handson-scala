@@ -7,7 +7,10 @@ package pis3.ch3
   */
 object Test extends App {
 
-  Console println Array("Antonel", "is", "the", "best").toList.mkString(" ")
+  import scala.io.Source
 
+  for(line <- Source.fromFile("/Users/antonelpazargic/jtonic/git/github/handson-scala/src/main/scala/pis3/ch3/Test.scala").getLines) {
+    println(line.length + " " + line)
+  }
 
 }

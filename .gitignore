@@ -1,6 +1,2 @@
-*.iws
-/out/
 .idea/
-target/
-.idea_modules/
 
